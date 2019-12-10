@@ -1,0 +1,12 @@
+{
+    "manifest_version":2,
+    "name":"关闭提示框",
+    "version":"1.0",
+    "browser_action":{
+        "default_title":"关闭评教提示框"
+    },
+    "content_scripts":[{
+        "matches":["http://zhjw.scu.edu.cn/student/teachingEvaluation/evaluation/index"],
+        "js":["js/main.js"]
+    }]
+}
